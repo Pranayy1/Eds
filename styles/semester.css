@@ -1,0 +1,60 @@
+.semester-container {
+    padding: 8rem 5% 4rem;
+}
+
+.semester-container h1,
+.semester-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.semester-grid,
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.semester-card,
+.subject-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.semester-card:hover,
+.subject-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.semester-card h3,
+.subject-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.back-button {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .semester-grid,
+    .subjects-grid {
+        grid-template-columns: 1fr;
+    }
+}

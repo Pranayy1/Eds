@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivani Books - RavTut</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/semester.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">RavTut</div>
+        <a href="/" class="back-button"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </nav>
+
+    <main class="semester-container">
+        <h1>Select Your Semester</h1>
+        <div class="semester-grid" id="semesterGrid">
+            <!-- Semesters will be dynamically populated -->
+        </div>
+
+        <div class="subjects-container hidden" id="subjectsContainer">
+            <h2>Select Subject</h2>
+            <div class="subjects-grid" id="subjectsGrid">
+                <!-- Subjects will be dynamically populated -->
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="/js/books.js"></script>
+</body>
+</html>
